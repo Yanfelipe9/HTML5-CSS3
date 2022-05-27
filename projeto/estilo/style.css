@@ -60,8 +60,7 @@ nav:after{
 
 .nav-container li{
     display: inline-block;
-    list-style-type: none; 
-    ;   
+    list-style-type: none;    
 }
 
 .nav-container a{
@@ -75,8 +74,4 @@ nav:after{
     color: #3381f3;
     background-color: rgba(102, 102, 102, 0.418);
     border-radius: 5px;
-}
-.nav-container a:active{
-    transform:scale(1.5);
-    transition: 1s;
 }
