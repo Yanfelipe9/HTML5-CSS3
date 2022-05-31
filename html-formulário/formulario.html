@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+<!-- Ao atribuir o valor do id="nome" do input no for="nome" do label, ele redireciona ao campo -->
+    <form>
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome" > <br> <br>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" > <br> <br>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Digite seu email" > <br> <br>
+        
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha"> <br> <br>
+
+        <h2>Tipos de animais</h2>
+        <input id="cachorro" type="radio" name="animal" value="Cachorro" > 
+        <label for="cachorro">Cachorro</label> <br> <br>
+
+        <input id="gato" type="radio" name="animal" value="Gato"> 
+        <label for="gato">Gato</label> <br> <br>
+
+        <input id="passaro" type="radio" name="animal" value="passaro"> 
+        <label for="passaro">Passaro</label> <br> <br>
+
+        <h2>O que voçê tem em casa</h2>
+
+        <input type="checkbox" id="item1" name="item1"
+        value="TV">
+        <label for="item1">TV</label>
+
+        <input type="checkbox" id="item2" name="item2" value="Rádio">
+        <label for="item2">Rádio</label>
+
+        <input type="checkbox" id="item3" name="item3" value="Geladeira">
+        <label for="item3">Geladeira</label>
+
+        <h2>Escolha uma cor</h2>
+        <select name="cores" id="cor">
+
+            <option value="" selected disabled >Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+
+        </select> <br> <br>
+
+        <h2>Digite seu texto</h2>
+
+        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+
+        <!-- Campo input do type submit -->
+        <br> <br>
+        <label for="imput"></label>
+        <input id="imput" type="submit" value="Enviar Formulário" > <br> <br>
+       
+
+    </form>
+    
+</body>
+</html>
