@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+
+        .container{
+            border: 1px solid black;
+            /* Para que o container absorva e preecha o espaço da <img> que está usando float, utiliza-se o "OVERFLOW"*/
+            overflow: auto;
+        }
+
+        .container img{
+            /* Saiu do fluxo normal, e partir dai flutua no 'container' e libera espaço para o <p> */
+            float: left;
+            margin: 0px 10px 10px 0px;
+        }
+
+        .container p{
+
+            text-align: justify;
+            margin: 10px;  
+        }
+
+        nav{
+            background-color: black;
+            padding: 20px 0px 20px 0px;
+            margin-bottom: 10px; 
+            
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            
+        }
+
+        li{
+            display: inline-block;
+           
+        }
+
+        li a {
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgba(255, 255, 255, 0.329);
+            transition: 0.3s;
+        }
+
+        .login{
+            float: right;
+        }
+
+
+
+        h2{
+            /* Vai limpar um ponto de flutuação */
+            /* Especificando que a partir desse elemento a flutuação não vai valer em relação a <img> */
+            clear: both;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Float</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li class="login"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <img width="400px" src="https://images.pexels.com/photos/12070041/pexels-photo-12070041.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet deserunt nemo eos adipisci atque cum deleniti perspiciatis voluptatem consequuntur odit iste, animi eligendi asperiores aliquam, voluptate dolore! Maiores, quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta animi natus dignissimos suscipit quod labore nisi assumenda hic quasi, vero molestiae, autem dolorem! Exercitationem omnis, provident repudiandae sunt aliquid autem?</p>
+
+            <h2>Outro conteudo</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate necessitatibus quod blanditiis. Ea quod voluptate laborum, quam molestias repellendus dolores nemo, ullam enim cum distinctio sequi, tenetur fuga praesentium eius?</p>
+            
+        </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+
+.exemplo{
+    background-color: rgb(107, 107, 112);
+    color: black;
+    height: 90px;
+    width: 400px;
+    overflow: scroll;
+    /* OVERFLOW só funciona quando é especificado alguma dimensão para o elemento*/
+    /* hidden -> Mostra somente oque se enquadra no elemento especificado */
+    /* scroll -> Coloca a barra de rolagem na lateral, dentro do elemento especificado(width e height) */
+}
+
+body{
+    /* Tira a barra de rolage do eixo y */
+    overflow-y: hidden;
+    /* Tira a barra de rolage do eixo x */
+    overflow-x: hidden;
+}
+
+footer{
+    width: 2000px;
+    height: 2000px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Meu overflow</h1>
+
+    <div  class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit dignissimos reprehenderit ab, laborum cum ut voluptates et atque quam obcaecati, esse aliquam harum distinctio odio itaque maiores labore magni?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio neque doloremque delectus ipsa rem voluptatem, voluptatibus nihil numquam expedita fugiat soluta officiis iure dolorem deserunt optio. Tenetur molestias dolorum voluptas.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ea doloremque, totam sed corrupti et vitae rerum nihil quasi a non dicta nesciunt reprehenderit ipsa consequuntur, modi quam perferendis molestias!</p>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
