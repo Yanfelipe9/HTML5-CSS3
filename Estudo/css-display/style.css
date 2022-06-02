@@ -1,0 +1,27 @@
+@charset "utl-8";
+
+
+
+ul{
+    border: 1px solid;
+}
+
+li{
+    height: 150px;
+    width: 150px;
+}
+.azul{
+    background-color: blue;
+}
+.rosa{
+    background-color: pink;
+}
+.preto{
+    background-color: black;
+}
+
+div{
+    width: 33%;
+    height: 400px;
+    display: inline-block;
+}

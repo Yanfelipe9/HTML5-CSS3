@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            position: relative;
+            display: inline-block;
+            background-color: blue;
+            width: 100%;
+            height: 400px;
+            background-image: url(https://images.pexels.com/photos/12331331/pexels-photo-12331331.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+            opacity: 0.6;
+            background-position: center;
+        }
+        .div1{
+            position: relative;
+            left: 600px;
+            display: inline-block;
+            background-color: yellow;
+            width: 30%;
+            height: 100px;
+            z-index: 1; /* Está na primeira camada */
+            
+        }
+        .div2{
+            /* Faz o posicionamento centralizado */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+
+            
+            display: inline-block;
+            background-color: white;
+            width: 30%;
+            height: 100px;
+
+        }
+        .div3{
+            position: sticky;
+            top: 0;
+            z-index: 2; /* Está na segunda camada, fazendo com que se sobresaia em relação a 'div1' */
+            display: inline-block;
+            background-color: rgb(212, 0, 255);
+            width: 30%;
+            height: 100px;            
+        }
+        .whats{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-color: green;
+            color: white;
+            width: 80px;
+            height: 80px;
+        }
+        .rolagem{
+            position: sticky;
+            top: -1px;
+            width: 300px;
+            margin: auto;
+            border-top: 5px solid black;
+            height: 500px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="div1">Primeira div</div>
+        <div class="div2">Segunda div</div> 
+        <div class="div3">terceira div</div>
+
+    </div>   
+    
+    <div class="rolagem"></div>
+    <div style="height: 1000px; background-color: bisque;">conteuto</div>
+    <div class="whats">Whats</div>
+
+</body>
+</html>
