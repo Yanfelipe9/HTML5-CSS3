@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+
+        ul{
+            background-color: black;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        li{
+           float: left;
+
+        }
+
+        li a, .dropbtn{
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 16px;
+            color: white;
+
+        }
+                            /* O que vai acontercer com"dropbtn" quando o "dropdown" for :hover */
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: rgb(255, 0, 0);
+        }
+        .dropdown{
+            display: inline-block; 
+            margin-right: 30px;
+        }
+
+        .dropdown-content{
+            /* Para desaparecer o conteudo do "DROPDOWN-CONTENT" */
+            display: none;   
+            position: absolute;
+            background-color: white;
+            width: 150px;
+            
+            
+        }
+
+        .dropdown-content a{
+            color: black;
+            /* "DISPLAY BLOCK" para que o link fique em uma colula e preencha o espaço */
+            display: block;
+            border: 1px solid rgba(0, 0, 0, 0.116);
+             
+        }
+        /* Faz aparecer o conteudo do ".dropdown-content"  */
+        .dropdown:hover .dropdown-content{
+            display: block;
+            
+        }
+
+        .dropdown-content a:hover{
+            color: white;
+
+        }
+
+    
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="#">Link</a>
+            <!-- Conteudo do botão -->
+            <div class="dropdown-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </li>
+
+    </ul>
+
+</body>
+</html>
