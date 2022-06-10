@@ -1,0 +1,82 @@
+@charset "utl-8";
+
+h2{
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+/* Smartphones (600px para baixo) */
+/* O que vai acontecer quando o tamanho máximo for 600px */
+@media only screen and (max-width: 600px) {
+body{
+    background-color: red;
+}
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+body{
+    background-color: blue;
+}
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+body{
+    background-color: yellow;
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+body{
+    background-color: green;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+body{
+    background-color: purple;
+}    
+h2{
+    font-size: 2.0em;
+}
+p{
+    /* utilizado para desaparecer conteudos e poder colocar em outro canto */
+    display: none;
+}
+
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+
+    .exemplo{
+        background-color: black;
+        border-radius: 20px;
+        box-shadow:inset 0px 0px 100px white; 
+        height: 300px;
+        transition: background-color 5s, box-shadow 5s ; 
+
+    }
+    
+}

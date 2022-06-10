@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .caixa{
+
+            background-color: white;
+            height: auto;
+            width: 40%;
+            /* Sombra padrão para card */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            border-radius: 5px;
+        
+        }
+
+        .caixa img{
+            max-width: 100%;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .reduzido {
+            /* Tira as quebras de linha e deixa em uma linha só */
+            white-space: nowrap;
+             /* hidden -> Mostra somente oque se enquadra no elemento especificado */
+            overflow: hidden;
+            /* Mostra com os "..." que tem um conteudo adicional */
+            text-overflow: ellipsis;
+            padding: 0px 5px 0px 5px;
+        }
+
+        .caixa:hover .reduzido{
+            white-space: normal;
+        }
+        
+        p.reduzido{
+            padding-bottom: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="caixa">
+        <img src="../imagens/beautiful-pet-portrait-dog.jpg" alt=""> 
+        <h2 class="reduzido">
+            Isso é um card exemplo de um titulo muito longo! 
+            Isso é um card exemplo de um titulo muito longo! 
+        </h2>
+        
+        <p class="reduzido">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae tempora vero a porro laudantium, veniam consequatur? .</p>
+       
+
+    </div>
+    
+</body>
+</html>
