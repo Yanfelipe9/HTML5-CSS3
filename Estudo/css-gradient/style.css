@@ -1,0 +1,16 @@
+.gradiente{
+    height: 20vh;
+    /* to bottom - de cima para baixo */
+    /* to bottom right/left */
+    /* to right - desquerda para direita */
+    /* to left - da direita para esquerda */
+    /* to top - de baixo para cima */
+    /* 45deg - Podemor usar os angulos*/
+    background-image: linear-gradient(blue,rgb(6, 71, 251),rgb(0, 132, 255));
+}
+
+.gradiente2{
+    margin-top: 10vh;
+    height: 30vh;
+    background-image: radial-gradient(black,purple,orange);
+}
