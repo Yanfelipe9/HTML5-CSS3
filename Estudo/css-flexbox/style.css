@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.flex-pai{
+    background: blue;
+    height: 500px;
+    display: flex;
+    /* collum / collum-reverse ; row / row-reverse*/
+    flex-direction: row;
+    /* Joga os elementos para baixo, para que fique contido no conteudo */
+    flex-wrap: wrap;
+    /* Alinhamento dos conteudos */
+    /* Dar espaçamento entre os conteudo (space-around;space-bettwen, space-evenly */
+    justify-content: center;
+     /*Posicionamento dos itens em relação a vertical  */
+    align-items: center;
+    /* Posiciona todo o conteudo */
+    align-content: center;
+}
+/* Utilizado para menus de site - transformando de linha para coluna */
+/* @media screen and (max-width:600px){
+ .flex-pai{
+    flex-direction: column;
+ }  
+} */
+
+.flex-pai div{
+    /* Sempre utilizada no (FLEX-FILHO) */
+    /* Muda o crescimento das divs para que se encaixe na (DIV-PAI) */
+    flex-grow: 1;
+    background: white;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}
