@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrupando</title>
+</head>
+<style>
+  table{
+      border-collapse: collapse;
+      max-width: 1000px;
+  }
+  td,th{
+      border: 1px solid black;
+      padding: 8px;
+  }
+  .coluna-nome{
+      background-color: blue;
+  }
+  .coluna-idade{
+      background-color: red;
+  }
+  .coluna-group{
+      background-color: green;
+  }
+</style>
+<body>
+  <table>
+    <!-- COLGROUP -> AGRUPA AS COLUNAS  -->
+    <colgroup>
+        <col class="coluna-nome">
+        <col class="coluna-sexo">
+        <col class="coluna-idade">
+        <col class="coluna-prof">
+    </colgroup> 
+
+    <caption>Cadastro</caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+</table>
+<br><br>
+  <table>
+    <!-- COLGROUP -> AGRUPA AS COLUNAS  -->
+    <colgroup>
+        <col class="coluna-nome">
+        <col class="coluna-group" span="3">
+
+    </colgroup> 
+
+    <caption>Cadastro</caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Gamer</td>
+    </tr>
+</table>
+</body>
+</html>

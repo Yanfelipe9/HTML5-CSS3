@@ -10,14 +10,40 @@
 <body>
     <h1>Formulário Aqui</h1>
     <!-- Ao atribuir o valor do id="nome" do input no for="nome" do label, ele redireciona ao campo -->
-    <form>
+    <form autocomplete="on">
 
         <!--LEGENDA PARA NOME-->
         <label for="campo_nome">Nome:</label>
 
         <!--CAMPO INPUT DO TYPE TEXT-->
-        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+        
+        <input id="campo_nome" type="text" minlength="3" maxlength="40" size="20" placeholder="Digite seu nome aqui" required>
+        <!-- MINLENGTH -> Mínimo de caracteres que o campo deve ter -->
+        <!-- MAXLENGTH -> Máximo de caracteres que o campo deve ter -->
+        <!-- SIZE -> Tamanho do campo de input  -->
+        <br> <br>
 
+        <!--LEGENDA PARA NUMERO-->
+        <label for="campo_numero">Numero:</label>
+
+        <!--CAMPO INPUT DO TYPE NUMBER-->
+        
+        <input id="campo_numero" type="number" min="0" step="2" placeholder="Digite seu numero aqui" required>
+        <!--
+        MIN -> Mínimo que o campo deve ter 
+        MAX -> Máximo que o campo deve ter 
+        STEP -> Passo que o campo deve ter  
+        -->
+        <br> <br>
+
+        <!--LEGENDA PARA TELEFONE-->
+        <label for="campo_telefone">Telefone:</label>
+
+        <!--CAMPO INPUT DO TYPE TELEFONE-->
+        
+        <input id="campo_numero" type="tel" pattern="" placeholder="Digite seu telefone aqui" required>
+        <!-- PATTERN -> Expressão regular para o campo de input -->
+        
         <br> <br>
 
         <!--LEGENDA PARA EMAIL-->
