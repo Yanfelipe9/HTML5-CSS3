@@ -108,10 +108,15 @@
         <!-- CAMPO SELECT-->
         <select name="cores">
             <option selected disabled value="">Selecione uma cor</option>
-            <option value="vermelho">Vermelho</option>
-            <option value="azul">Azul</option>
-            <option value="amarelo">Amarelo</option>
-            <option value="verde">Verde</option>
+            <!-- OPTGROUP -> Grupo de opções -->
+            <optgroup label="Cores claras">
+                <option value="vermelho" >Vermelho</option>
+                <option value="azul">Azul</option>
+            </optgroup>
+            <optgroup label="Cores escuras">
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+            </optgroup>
         </select>
 
         <br><br>
