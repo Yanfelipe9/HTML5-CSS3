@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+}
+
+#header, #footer{
+    background-image: url(imagens/wallpaperbetter.com_1920x1080\ \(3\).jpg);
+
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    color: white;
+    font-size: 20px;
+
+}
+
+#container-main{
+    background-color: #000000;
+
+    flex: 1 0 500px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    grid-template-areas: 
+        " item1 item2 item3 "
+        " item4 item4 item4 "
+        " item5 item5 item6 ";
+}
+
+.item{
+    color: white;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#item1{
+    background-image: url(imagens/barba\ branca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: item1;
+    min-width: 250px;
+}
+
+#item2{
+    background-image: url(imagens/chopper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    grid-area: item2;
+    min-width: 250px;
+
+}
+
+#item3{
+    background-image: url(imagens/donflamingo.jpg);
+    background:black url(imagens/donflamingo.jpg) top no-repeat;
+    background-size: cover;
+    grid-area: item3;
+    min-width: 250px;
+
+}
+
+#item4{
+    background-image: url(imagens/wallpaperbetter.com_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    grid-area: item4;
+}
+
+#item5{
+    background-image: url(imagens/wallpaperbetter.com_1920x1080\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    grid-area: item5;
+    min-width: 350px;
+}
+
+#item6{
+    background: url(imagens/luffy.jpg) center no-repeat;
+    background-size: cover;
+    grid-area: item6;
+    min-width: 250px;
+}
